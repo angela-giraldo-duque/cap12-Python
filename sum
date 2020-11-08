@@ -1,0 +1,5 @@
+import urllib.request
+man_a = urllib.request.urlopen('http://py4e-data.dr-chuck.net/comments_42.html')
+for linea in man_a:
+    print(linea.decode().strip())
+    
